@@ -15,6 +15,12 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         color: white;
     }
+    .weapon-container {
+        padding: 3rem 15rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
 `;
 

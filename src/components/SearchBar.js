@@ -16,7 +16,7 @@ const SearchBar = () => {
 
 const Form = styled.form`
   min-height: 3.5rem;
-  flex-basis: 25rem;
+  flex-basis: 27rem;
   display: flex;
   background: #3f3f3f;
   border-radius: 0.5rem;

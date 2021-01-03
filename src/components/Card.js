@@ -1,33 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = () => {
+const Card = ({ weaponData }) => {
   return (
     <CardContainer>
       <WeaponInfo>
         <Top>
+          <img src={weaponData.img} alt={weaponData.name} />
           <div className="top-right-tab"></div>
         </Top>
         <Bottom>
-            <div className="bottom-left-tab"></div>
+          <div className="bottom-left-tab"></div>
+          <h2>{weaponData.name}</h2>
+          <WeaponStats>
+          </WeaponStats>
         </Bottom>
       </WeaponInfo>
     </CardContainer>
   );
 };
 
-const CardContainer = styled.section`
-  width: 245px;
-  height: 275px;
-  margin: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+const CardContainer = styled.article`
+  width: 22rem;
+  height: 28rem;
+  margin-bottom: 5rem;
 `;
 
 const WeaponInfo = styled.div`
-  width: 85%;
-  height: 85%;
+  width: 100%;
+  height: 100%;
   background-color: #ffde40;
   display: flex;
   flex-direction: column;
@@ -67,6 +68,15 @@ const Bottom = styled.div`
     border-top-left-radius: 5px;
     transform: rotateX(180deg);
   }
+  h2 {
+    font-size: 2rem;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+  }
 `;
+
+const WeaponStats = styled.div`
+
+`
 
 export default Card;
