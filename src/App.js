@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import GlobalStyles from './GlobalStyles';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Home from './pages/Home';
+import AR from './pages/AR';
 
 const App = () => {
   const [weaponData, setWeaponData] = useState({
-    "ar": [],
-    "dmr": [],
-    "lmg": [],
-    "smg": [],
-    "sniper": [],
-    "shotgun": [],
+    ar: [],
+    dmr: [],
+    lmg: [],
+    smg: [],
+    sniper: [],
+    shotgun: [],
   });
 
   useEffect(() => {
@@ -25,16 +28,24 @@ const App = () => {
       }));
     };
     for (let key in weaponData) {
-      fetchData(key)
+      fetchData(key);
     }
   }, []);
 
   return (
-    <div>
+    <BrowserRouter>
       <GlobalStyles />
       <Header />
       <Nav />
-    </div>
+      <Switch>
+        <Route exact path="/">
+          <Home allWeaponData={weaponData} />
+        </Route>
+        <Route exact path="/ar">
+          <AR weaponDataAR={weaponData.ar} />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 };
 
