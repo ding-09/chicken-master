@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logoImg from '../images/pubg_logo.png';
+import logoImg from '../images/PUBG_Logo_White.png'
 
 const Header = () => {
   return (
@@ -16,6 +16,7 @@ const HeaderSection = styled.header`
   img {
     display: inline-block;
     margin-right: 1rem;
+    width: 20rem;
   }
   h1 {
     color: #ffde40;

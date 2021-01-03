@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
+import Card from '../components/Card';
 
 const AR = () => {
-    return (
-        <div>
-            I AM TESTING !!!!! 
-        </div>
-    )
-}
+  return (
+    <>
+      <Card />
+    </>
+  );
+};
 
 
-export default AR
+
+export default AR;
