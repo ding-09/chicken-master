@@ -12,7 +12,7 @@ const Header = () => {
 };
 
 const HeaderSection = styled.header`
-  padding: 3rem 6rem;
+  padding: 5rem 15rem;
   img {
     display: inline-block;
     margin-right: 1rem;
@@ -20,7 +20,7 @@ const HeaderSection = styled.header`
   h1 {
     color: #ffde40;
     display: inline;
-    font-size: 1.3rem;
+    font-weight: bold;
   }
 `;
 

@@ -7,8 +7,9 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
     html {
-        background: #1B1C1F;
-        font-family: Arial, Helvetica, sans-serif;
+        background: #202020;
+        font-size: 62.5%;
+        font-family: 'Source Sans Pro', sans-serif;
     }
     a {
         text-decoration: none;
