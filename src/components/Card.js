@@ -13,6 +13,30 @@ const Card = ({ weaponData }) => {
           <div className="bottom-left-tab"></div>
           <h2>{weaponData.name}</h2>
           <WeaponStats>
+            <StatsGroup>
+              <p>Base</p>
+              <p className="data">{weaponData.base_dmg}</p>
+            </StatsGroup>
+            <StatsGroup>
+              <p>Mag</p>
+              <p className="data">{weaponData.mag}</p>
+            </StatsGroup>
+            <StatsGroup>
+              <p>Fire Rate</p>
+              <p className="data">{weaponData.rate_of_fire}</p>
+            </StatsGroup>
+            <StatsGroup>
+              <p>Stability</p>
+              <p className="data">{weaponData.stability}</p>
+            </StatsGroup>
+            <StatsGroup>
+              <p>Range</p>
+              <p className="data">{weaponData.range}</p>
+            </StatsGroup>
+            <StatsGroup>
+              <p>Ammo</p>
+              <p className="data">{weaponData.ammo.split('m')}</p>
+            </StatsGroup>
           </WeaponStats>
         </Bottom>
       </WeaponInfo>
@@ -70,13 +94,29 @@ const Bottom = styled.div`
   }
   h2 {
     font-size: 2rem;
-    margin-top: 0.8rem;
-    margin-left: 2rem;
+    padding-top: 0.8rem;
+    padding-left: 2rem;
   }
 `;
 
 const WeaponStats = styled.div`
+  padding: 0.8rem 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
 
-`
+const StatsGroup = styled.div`
+  flex-basis: 45%;
+  margin-bottom: 0.5rem;
+  p {
+    font-size: 1.4rem;
+    display: inline-block;
+  }
+  .data {
+    font-weight: bold;
+    float: right;
+  }
+`;
 
 export default Card;

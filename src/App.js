@@ -6,6 +6,12 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import AR from './pages/AR';
+import DMR from './pages/DMR';
+import SMG from './pages/SMG';
+import LMG from './pages/LMG';
+import Snipers from './pages/Snipers';
+import Shotguns from './pages/Shotguns';
+
 
 const App = () => {
   const [weaponData, setWeaponData] = useState({
@@ -43,6 +49,21 @@ const App = () => {
         </Route>
         <Route exact path="/ar">
           <AR weaponDataAR={weaponData.ar} />
+        </Route>
+        <Route exact path="/dmr">
+          <DMR weaponDataDMR={weaponData.dmr} />
+        </Route>
+        <Route exact path="/smg">
+          <SMG weaponDataSMG={weaponData.smg} />
+        </Route>
+        <Route exact path="/lmg">
+          <LMG weaponDataLMG={weaponData.lmg} />
+        </Route>
+        <Route exact path="/snipers">
+          <Snipers weaponDataSnipers={weaponData.sniper} />
+        </Route>
+        <Route exact path="/shotguns">
+          <Shotguns weaponDataShotguns={weaponData.shotgun} />
         </Route>
       </Switch>
     </BrowserRouter>

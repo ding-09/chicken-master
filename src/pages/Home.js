@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import AR from './AR';
 
-const Home = ({ allWeaponData }) => {
+const Home = () => {
     return (
-        <div>
-            hello bois
-        </div>
-    )
-}
+      <div>
+        {/* <AR /> */}
+      </div>
+    );
+};
 
-export default Home
+export default Home;
