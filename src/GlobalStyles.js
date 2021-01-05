@@ -21,8 +21,9 @@ const GlobalStyles = createGlobalStyle`
         margin-left: 15rem;
         display: flex;
         flex-wrap: wrap;
-    }
 
+    }
+ 
 `;
 
 export default GlobalStyles;

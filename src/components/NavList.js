@@ -47,7 +47,7 @@ const NavList = () => {
 const List = styled.ul`
   list-style-type: none;
   display: flex;
-  flex-basis: 55rem;
+  flex-basis: 100%;
   li {
     margin-right: 1rem;
     background: #3f3f3f;
@@ -57,8 +57,9 @@ const List = styled.ul`
     border-radius: 10rem;
     a {
       display: block;
-      padding: 0.3rem 1.2rem;
+      padding: 0.4rem 1.4rem;
       width: 100%;
+      height: 100%;
       border-radius: 10rem;
     }
   }

@@ -19,7 +19,7 @@ const SectionHeader = styled.h2`
   margin-top: 2rem;
   padding-right: 3rem;
   color: #de8d00;
-  border-bottom: 1px solid #de8d00;
+  border-bottom: 2px solid #de8d00;
   display: inline-block;
   line-height: 1.3;
 `;

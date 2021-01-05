@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from '../components/Card';
-import styled from 'styled-components';
 import Title from '../components/Title'
 
 const AR = ({ weaponDataAR, title }) => {
