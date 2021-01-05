@@ -4,14 +4,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
 import Header from './components/Header';
 import Nav from './components/Nav';
-import Home from './pages/Home';
 import AR from './pages/AR';
 import DMR from './pages/DMR';
 import SMG from './pages/SMG';
 import LMG from './pages/LMG';
 import Snipers from './pages/Snipers';
 import Shotguns from './pages/Shotguns';
-
 
 const App = () => {
   const [weaponData, setWeaponData] = useState({
@@ -45,7 +43,12 @@ const App = () => {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <Home allWeaponData={weaponData} />
+          <AR title={"AR"} weaponDataAR={weaponData.ar} />
+          <DMR title={"DMR"} weaponDataDMR={weaponData.dmr} />
+          <SMG title={"SMG"} weaponDataSMG={weaponData.smg} />
+          <LMG title={"LMG"} weaponDataLMG={weaponData.lmg} />
+          <Snipers title={"Snipers"} weaponDataSnipers={weaponData.sniper} />
+          <Shotguns title={"Shotguns"} weaponDataShotguns={weaponData.shotgun} />
         </Route>
         <Route exact path="/ar">
           <AR weaponDataAR={weaponData.ar} />

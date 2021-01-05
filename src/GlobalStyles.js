@@ -16,10 +16,11 @@ const GlobalStyles = createGlobalStyle`
         color: white;
     }
     .weapon-container {
-        padding: 3rem 15rem;
+        width: 85%;
+        padding-top: 3rem;
+        margin-left: 15rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
 
 `;

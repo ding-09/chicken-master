@@ -33,10 +33,6 @@ const Card = ({ weaponData }) => {
               <p>Range</p>
               <p className="data">{weaponData.range}</p>
             </StatsGroup>
-            <StatsGroup>
-              <p>Ammo</p>
-              <p className="data">{weaponData.ammo.split('m')}</p>
-            </StatsGroup>
           </WeaponStats>
         </Bottom>
       </WeaponInfo>
@@ -45,8 +41,9 @@ const Card = ({ weaponData }) => {
 };
 
 const CardContainer = styled.article`
-  width: 22rem;
+  flex-basis: 23rem;
   height: 28rem;
+  margin-right: 3rem;
   margin-bottom: 5rem;
 `;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logoImg from '../images/PUBG_Logo_White.png'
+import logoImg from '../images/PUBG_Logo_White.png';
 
 const Header = () => {
   return (

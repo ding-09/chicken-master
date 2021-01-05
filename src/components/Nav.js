@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavList from './NavList';
-import SearchBar from './SearchBar';
 
 const Nav = () => {
   return (
     <NavSection>
       <NavList />
-      <SearchBar />
     </NavSection>
   );
 };
